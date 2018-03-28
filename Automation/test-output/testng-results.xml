@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[TestValidLogin is PASSED]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="21037" started-at="2018-03-28T03:43:40Z" finished-at="2018-03-28T03:44:01Z">
+    <groups>
+      <group name="Login">
+        <method signature="ValidLogin.TestValidLogin()[pri:1, instance:Script.ValidLogin@6d4b1c02]" name="TestValidLogin" class="Script.ValidLogin"/>
+      </group> <!-- Login -->
+      <group name="Smoke">
+        <method signature="ValidLogin.TestValidLogin()[pri:1, instance:Script.ValidLogin@6d4b1c02]" name="TestValidLogin" class="Script.ValidLogin"/>
+      </group> <!-- Smoke -->
+    </groups>
+    <test name="Default test" duration-ms="21037" started-at="2018-03-28T03:43:40Z" finished-at="2018-03-28T03:44:01Z">
+      <class name="Script.ValidLogin">
+        <test-method status="PASS" signature="openApp()[pri:0, instance:Script.ValidLogin@6d4b1c02]" name="openApp" is-config="true" duration-ms="13477" started-at="2018-03-28T03:43:40Z" finished-at="2018-03-28T03:43:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApp -->
+        <test-method status="PASS" signature="TestValidLogin()[pri:1, instance:Script.ValidLogin@6d4b1c02]" name="TestValidLogin" duration-ms="6891" started-at="2018-03-28T03:43:54Z" finished-at="2018-03-28T03:44:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TestValidLogin -->
+        <test-method status="PASS" signature="closeApp(org.testng.ITestResult)[pri:0, instance:Script.ValidLogin@6d4b1c02]" name="closeApp" is-config="true" duration-ms="634" started-at="2018-03-28T03:44:01Z" finished-at="2018-03-28T03:44:01Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=TestValidLogin status=SUCCESS method=ValidLogin.TestValidLogin()[pri:1, instance:Script.ValidLogin@6d4b1c02] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[TestValidLogin is PASSED]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- closeApp -->
+      </class> <!-- Script.ValidLogin -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
