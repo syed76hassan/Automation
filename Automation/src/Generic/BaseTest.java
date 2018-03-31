@@ -22,17 +22,13 @@ public abstract class BaseTest implements IAutoConst{
 		System.setProperty(GECKO_KEY,GECKO_VALUE);
 	}
 	
-	@Parameters({"ip","browser"})
 	@BeforeMethod(alwaysRun=true)
-	public void openApp(String ip,String browser) throws MalformedURLException
+	public void openApp()
 	{
 		String appURL = AutoUtil.getProperty(CONFIG_PATH,"URL");
 		String strITO = AutoUtil.getProperty(CONFIG_PATH,"ITO");
 		long ITO = Long.parseLong(strITO);
-		URL url=new URL("http://"+ip+":4444/wd/hub");
-		DesiredCapabilities dc=new DesiredCapabilities();
-		dc.setBrowserName(browser);
-		driver=new RemoteWebDriver(url, dc);
+		driver=new FirefoxDriver();
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}

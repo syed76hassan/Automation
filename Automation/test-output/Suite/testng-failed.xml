@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test on firefox(failed)">
+    <parameter name="ip" value="localhost"/>
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="Script.ValidLogin">
+        <methods>
+          <include name="TestValidLogin"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- Script.ValidLogin -->
+      <class name="Script.InvalidLogin">
+        <methods>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+          <include name="TestInValidLogin"/>
+        </methods>
+      </class> <!-- Script.InvalidLogin -->
+      <class name="Script.Val">
+        <methods>
+          <include name="TestValidLogin"/>
+          <include name="openApp"/>
+          <include name="closeApp"/>
+        </methods>
+      </class> <!-- Script.Val -->
+    </classes>
+  </test> <!-- Test on firefox(failed) -->
+</suite> <!-- Failed suite [Suite] -->
