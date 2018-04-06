@@ -2,17 +2,17 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Suite" parallel="tests">
   <test name="Test on firefox">
-  <parameter name="ip" value="localhost"/>
+  <parameter name="ip" value="192.168.43.122"/>
   <parameter name="browser" value="firefox"/>
     <packages>
       <package name="Script"/>
     </packages>
   </test> <!-- Test -->
-  <test name="test on firefox">
-  <parameter name="ip" value="192.168"/>
-  <parameter name="browser" value="firefox"/>
+  <test name="test on chrome">
+  <parameter name="ip" value="192.168.43.122"/>
+  <parameter name="browser" value="chrome"/>
   <packages>
   <package name="Script"/>
   </packages>
   </test>
-</suite> <!-- Suite -->
+  </suite>

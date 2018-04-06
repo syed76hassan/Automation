@@ -36,8 +36,6 @@ public abstract class BaseTest implements IAutoConst{
 		driver.get(appURL);
 		driver.manage().timeouts().implicitlyWait(ITO,TimeUnit.SECONDS);
 	}
-
-	
 	@AfterMethod(alwaysRun=true)
 	public void closeApp(ITestResult testResult) {
 		String name=testResult.getName();

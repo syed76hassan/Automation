@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <test thread-count="5" name="Test on firefox(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="test on chrome(failed)" parallel="tests">
+    <parameter name="ip" value="192.168.43.122"/>
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="Script.ValidLogin">
         <methods>
@@ -25,5 +27,5 @@
         </methods>
       </class> <!-- Script.Val -->
     </classes>
-  </test> <!-- Test on firefox(failed) -->
+  </test> <!-- test on chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
